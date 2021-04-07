@@ -271,8 +271,9 @@ Parameters:
     - db.t2.medium
     - db.t2.micro
     - db.t2.small
+    - db.r6g.large
     ConstraintDescription: Must select a valid database instance type.
-    Default: db.r4.large
+    Default: db.r6g.large
     Description: The name of the compute and memory capacity class of the Amazon RDS
       (Aurora/MySQL) DB instance.
     Type: String
@@ -343,8 +344,9 @@ Parameters:
     - cache.r3.2xlarge
     - cache.r3.4xlarge
     - cache.r3.8xlarge
+    - cache.r6g.large
     ConstraintDescription: Must select a valid cache instance type.
-    Default: cache.m4.large
+    Default: cache.r6g.large
     Description: The name of the compute and memory capacity class of the ElastiCache
       instance.
     Type: String
@@ -528,6 +530,7 @@ Rules:
           - db.r4.2xlarge
           - db.r4.xlarge
           - db.r4.large
+          - db.r6g.large
         - !Ref DBInstanceClass
       AssertDescription: Amazon Aurora does not currently support this DB instance
         class.

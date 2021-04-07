@@ -29,8 +29,9 @@ Parameters:
     - cache.r3.2xlarge
     - cache.r3.4xlarge
     - cache.r3.8xlarge
+    - cache.r6g.large
     ConstraintDescription: Must select a valid cache instance type.
-    Default: cache.m4.large
+    Default: cache.r6g.large
     Description: The name of the compute and memory capacity class of the ElastiCache
       instance.
     Type: String
